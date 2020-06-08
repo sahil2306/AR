@@ -12,14 +12,16 @@
     <body style='margin : 0px; overflow: hidden;'>
         
         <a-scene embedded vr-mode-ui="enabled: false" arjs='sourceType: webcam;'>
-
+<!-- 
         <a-assets>
             <a-asset-item id="animated_asset" src="BrainStem.gltf"></a-asset-item>
-        </a-assets>
+        </a-assets> -->
 
         <a-marker >
-            <a-entity scale="0.001 0.001 0.001" gltf-model-next="#animated_asset"></a-entity>
-
+<!--             <a-entity scale="0.001 0.001 0.001" gltf-model-next="#animated_asset"></a-entity>
+ -->
+            <a-gltf-model scale="0.01 0.01 0.01" src="https://raw.githubusercontent.com/TumblinDwnAgain/TumblinDwnAgain.github.io/master/spore_2_attempt_1/scene.gltf">
+            </a-gltf-model>
         </a-marker>
 
         <a-marker-camera preset='hiro'></a-marker-camera>
