@@ -20,8 +20,14 @@
         <a-marker >
 <!--             <a-entity scale="0.001 0.001 0.001" gltf-model-next="#animated_asset"></a-entity>
  -->
-            <a-gltf-model scale="0.01 0.01 0.01" src="https://rawgit.com/KhronosGroup/glTF-Sample-Models/master/2.0/DamagedHelmet/glTF/DamagedHelmet.gltf">
-            </a-gltf-model>
+            <a-gltf-model src="https://rawgit.com/KhronosGroup/glTF-Sample-Models/master/2.0/DamagedHelmet/glTF/DamagedHelmet.gltf" scale="0.7 0.7 0.7" position="0 1 0" rotation="-90 0 0" sound="on: model-loaded; src: url(https://rawgit.com/germanviscuso/AR.js/master/three.js/examples/sounds/Bloom_-_10_-_Temperance.mp3); autoplay: true; loop: true">
+          <a-animation attribute = "rotation"
+               dur = "10000"
+               from = "0 0 0"
+               to = "0 360 0"
+               easing = "linear"
+               repeat = "indefinite">
+          </a-animation>
         </a-marker>
 
         <a-marker-camera preset='hiro'></a-marker-camera>
