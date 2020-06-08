@@ -17,9 +17,12 @@
             <a-asset-item id="animated_asset" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf"></a-asset-item>
         </a-assets>
 
-        <a-marker >
-             <a-entity scale="2 2 2" gltf-model="#animated_asset"></a-entity>
-
+        <a-marker>
+             <a-entity
+                animation-mixer
+                gltf-model="#animated-asset"
+                scale="2 2 2">
+            </a-entity>
         </a-marker>
 
         <a-marker-camera preset='hiro'></a-marker-camera>
